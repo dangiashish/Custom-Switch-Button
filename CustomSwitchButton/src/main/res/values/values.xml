@@ -21,6 +21,6 @@
         <attr format="color" name="backgroundColorOnSwitchOff"/>
         <attr format="color" name="textColorOnSwitchOn"/>
         <attr format="color" name="textColorOnSwitchOff"/>
-        <attr format="color" name="themeColor"/>
+        <attr format="color" name="colorPrimary"/>
     </declare-styleable>
 </resources>

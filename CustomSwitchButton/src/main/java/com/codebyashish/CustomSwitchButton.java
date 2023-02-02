@@ -96,7 +96,7 @@ public class CustomSwitchButton extends View{
 
         try {
             TypedValue typedValue = new TypedValue();
-            context.getTheme().resolveAttribute(attr.themeColor, typedValue, true);
+            context.getTheme().resolveAttribute(attr.colorPrimary, typedValue, true);
             int color = typedValue.data;
             this.speed = a.getInteger(styleable.custom_switch_button_speed, 20);
             this.textOn = a.getString(styleable.custom_switch_button_textOn);
