@@ -1,21 +1,20 @@
 # Custom-Switch-Button
 
-#Step 1. Add the JitPack repository to your build file
+[![](https://jitpack.io/v/DangiAshish/Custom-Switch-Button.svg)](https://jitpack.io/#DangiAshish/Custom-Switch-Button)
 
-#Add it in your root build.gradle at the end of repositories:
-
-```
-allprojects {
- repositories {
-  maven { url 'https://jitpack.io' }
-  }
- }
-```
-  
-#Step 2. Add the dependency
-
-```
-dependencies {
-	        implementation 'com.github.DangiAshish:Custom-Switch-Button:1.0'
-	           }
-```
+#### Gradle
+ ```gradle
+ allprojects {
+		repositories {
+			maven { url 'https://jitpack.io' }
+		}
+	}
+ ```
+ 
+ ### Add dependency
+ 
+ ```Dependency
+ dependencies {
+	       implementation 'com.github.DangiAshish:Custom-Switch-Button:1.0'
+	}
+ ```
