@@ -1,4 +1,4 @@
-package com.codebyashish.customswitchbutton;
+package com.codebyashish;
 
 import org.junit.Test;
 

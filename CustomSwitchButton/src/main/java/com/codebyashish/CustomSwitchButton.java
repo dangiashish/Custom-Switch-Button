@@ -1,4 +1,4 @@
-package com.codebyashish.customswitchbutton;
+package com.codebyashish;
 
 import android.animation.ValueAnimator;
 import android.content.Context;
@@ -20,7 +20,7 @@ import com.codebyashish.customswitchbutton.R.attr;
 import androidx.annotation.Nullable;
 import androidx.core.content.res.ResourcesCompat;
 
-public class custom_switch_button extends View{
+public class CustomSwitchButton extends View{
     protected int width;
     protected int height;
     protected int speed = 20;
@@ -60,9 +60,9 @@ public class custom_switch_button extends View{
     private int bgColorOnSwitchOff = Color.parseColor("#FFFFFF");
     private int thumbColorOnSwitchOn = Color.parseColor("#FFFFFF");
     private int thumbColorOnSwitchOff = Color.parseColor("#FF6200EE");
-    private custom_switch_button.OnStatusChangedListener onStatusChangedListener;
+    private CustomSwitchButton.OnStatusChangedListener onStatusChangedListener;
 
-    public custom_switch_button(Context context) {
+    public CustomSwitchButton(Context context) {
         super(context);
         new TextView(context);
         this.outerRect = new RectF();
@@ -89,7 +89,7 @@ public class custom_switch_button extends View{
         this.bgPath = new Path();
     }
 
-    public custom_switch_button(Context context, @Nullable AttributeSet attrs) {
+    public CustomSwitchButton(Context context, @Nullable AttributeSet attrs) {
         super(context, attrs);
         Resources r = context.getResources();
         TypedArray a = context.getTheme().obtainStyledAttributes(attrs, styleable.custom_switch_button, 0, 0);
@@ -538,7 +538,7 @@ public class custom_switch_button extends View{
         this.invalidate();
     }
 
-    public void addOnStatusChangedListener(custom_switch_button.OnStatusChangedListener onStatusChangedListener) {
+    public void addOnStatusChangedListener(CustomSwitchButton.OnStatusChangedListener onStatusChangedListener) {
         this.onStatusChangedListener = onStatusChangedListener;
     }
 
